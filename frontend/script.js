@@ -5,7 +5,7 @@ async function getArticle() {
   datartikel.forEach(datartikel => {
     const container = document.getElementById('artikel')
     const cardArticles = document.createElement('div')
-    cardArticles.className = "col-2"
+    cardArticles.className = "col m-2"
     const cardData = `
       <div class="card">
         <div class="card-body">
