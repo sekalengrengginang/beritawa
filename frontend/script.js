@@ -9,8 +9,9 @@ async function getArticle() {
     const cardData = `
       <div class="card">
         <div class="card-body">
-        <h5 class="card-title">${datartikel.title}</h5>
-        <p class="card-text" id="artikel">${datartikel.article}</p>
+        <img src="https://api.duniagames.co.id/api/content/upload/file/12253577011693236861.jpg" class="card-img-top"/>
+        <h5 class="card-title py-2">${datartikel.title}</h5>
+        <p class="card-text text-truncate" style="max-width: 350px;" >${datartikel.article}</p>
       </div>
       </div>
        `;

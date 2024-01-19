@@ -27,8 +27,11 @@ module.exports = {
           data: {
             title: req.body.title,
             article: req.body.article,
+            categories: req.body.categories,
+            writer: req.body.writer,
           },
         })
+        console.log(data)
         res.json({
           status: true,
           data: data,
@@ -69,6 +72,8 @@ module.exports = {
         data: {
           title: req.body.title,
           article: req.body.article,
+          categories: req.body.categories,
+          writer: req.body.writer,
         },
       })
       res.json({
