@@ -1,5 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap');
 *{
     font-family: 'Plus Jakarta Sans', sans-serif;
+   
 }
 
+body{
+    background-color: #1E1E1E;
+}
+.navbar{
+    position: fixed ;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+.grid-container{
+    margin: 100px 20px 20px 20px;
+    display: grid;
+    grid-template-columns: 200px,500px;
+    grid-auto-rows: minmax(200px,auto);
+    grid-gap:20px;
+    grid-template-areas: "header header";
+}
+.grid-item{
+    background-color: wheat;
+}
+.grid-item-1{
+  grid-area: header;
+}
