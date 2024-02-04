@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const postController = require('../controllers/post');
+const postController = require('../controllers/articleController');
 
 // get and post route
 router.route('/articles')

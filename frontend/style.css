@@ -14,16 +14,14 @@ body{
     z-index: 2;
 }
 .grid-container{
-    margin: 100px 20px 20px 20px;
+    margin: 75px 20px 20px 20px;
     display: grid;
     grid-template-columns: 200px,500px;
     grid-auto-rows: minmax(200px,auto);
     grid-gap:20px;
     grid-template-areas: "header header";
 }
-.grid-item{
-    background-color: wheat;
-}
+
 .grid-item-1{
   grid-area: header;
 }

@@ -5,7 +5,7 @@ const prisma = new PrismaClient({
 module.exports = {
   showAllarticle: async (req, res) => {
     try {
-      const articles = (await prisma.post.findMany())
+      const articles = (await prisma.article.findMany())
       if (articles.length > 0) {
         res.json({
           status: true,
@@ -23,7 +23,7 @@ module.exports = {
   },
   addArticle: async (req, res) => {
     try {
-        const data = await prisma.post.create({
+        const data = await prisma.article.create({
           data: {
             title: req.body.title,
             article: req.body.article,
@@ -46,7 +46,7 @@ module.exports = {
   showOnearticle: async (req, res) => {
     try {
       const id = parseInt(req.params.id)
-      const data = await prisma.post.findUnique({
+      const data = await prisma.article.findUnique({
         where: {
           id: id
         }
@@ -65,7 +65,7 @@ module.exports = {
   updateArticle: async (req, res) => {
     try {
       const id = parseInt(req.params.id)
-      const updateArtikel = await prisma.post.update({
+      const updateArtikel = await prisma.article.update({
         where: {
           id: id
         },
@@ -90,7 +90,7 @@ module.exports = {
   deleteArticle: async (req, res) => {
     try {
       const id = parseInt(req.params.id)
-      const deleteUser = await prisma.post.delete({
+      const deleteUser = await prisma.article.delete({
         where: {
           id: id
         },
